@@ -4,6 +4,8 @@
 
 不装第三方软件、不编译、不留驻后台。双击就一个窗口，关掉即退出。
 
+> **[下载最新版本](https://github.com/Wrmming/asus-tuf-a15-display-control/releases/latest)** — 解压即用，含脚本 + 图标 + 许可
+
 ---
 
 ## 适用机型与范围
