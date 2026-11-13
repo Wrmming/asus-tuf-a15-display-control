@@ -73,6 +73,7 @@ Get-CimInstance -Namespace root\wmi -ClassName WmiMonitorBrightnessMethods
 |---|---|
 | `brightness.ps1` | 主程序，全部逻辑都在这一个文件里，无其他依赖 |
 | `icon.ico` | 窗口与快捷方式图标，**可选**。缺失时自动回退系统默认图标，不影响任何功能 |
+| `LICENSE` | MIT 许可 |
 
 程序启动时会尝试加载**同目录**下的 `icon.ico` 作为窗口图标。想换图标直接替换这个文件即可。
 
@@ -167,3 +168,11 @@ $b = [IO.File]::ReadAllBytes('.\brightness.ps1')
 Get-CimInstance Win32_VideoController | Select-Object Name, CurrentHorizontalResolution, CurrentVerticalResolution, CurrentRefreshRate
 Get-CimInstance -Namespace root\wmi -ClassName WmiMonitorID | Select-Object InstanceName
 ```
+
+---
+
+## 许可
+
+[MIT License](LICENSE)。随便用、改、二次分发，保留版权声明即可。
+
+由于它会直接改显示设置，作者不对任何因使用本脚本导致的设备异常负责——首次使用前建议把当前亮度和刷新率记一下，出问题能手动改回来。
